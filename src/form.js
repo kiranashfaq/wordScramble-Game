@@ -40,6 +40,7 @@ initGame() //calling initgame function so again game is restart
  createAcc.addEventListener("click", function(){
 event.preventDefault()
 init_Timer()
+initGame()
 
     createUserWithEmailAndPassword(auth, email.value, password.value)
     
@@ -87,6 +88,7 @@ input.style.display = "block";
    login.addEventListener("click",function(){
   event.preventDefault()
   init_Timer()
+  initGame()
     const auth = getAuth();
     signInWithEmailAndPassword(auth, email.value, password.value)
       .then((userCredential) => {

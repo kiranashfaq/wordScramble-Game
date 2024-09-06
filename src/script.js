@@ -151,7 +151,7 @@ correct_word = randomObj.word.toLocaleLowerCase()
 input.value = ""
 input.setAttribute("maxlength",correct_word.length)
 }
-initGame()
+// initGame()
 export{initGame}
 const checkWord = () =>{
     let userWord = input.value.toLocaleLowerCase()
