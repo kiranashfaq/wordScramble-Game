@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Scramble Game</title>
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <!-- start-game  -->
+    <h1 class="game" id="game-name">Word Scramble Game</h1>
+    <div class="start-game" id="blur">
+        <button id="start-btn">Start Game</button>
+    </div>
+    <!-- game card  -->
+    <div class="game-card" id="game-card">
+<div class="tittle-div">Guess the Scrambled word...</div>
+<div id="unscrambled-word"  class="word-div"></div>
+<div class="hints-time">
+<div id="hint-div"> Hint :  </div>
+<div id="time-div"></div>
+    </div>
+    <div class="input-div">
+    <input type="text"  class="enter-value" id="input" placeholder="Enter a valid word">
+    </div>
+    <div class="buttons-div">
+        <button id="refresh-button">Refresh Word</button>
+        <button id="check-button">Check Word</button>
+    </div>
+    <div class="buttons-div">
+    <button id="signout">Sign Out</button>
+    </div>
+</div>
+<!-- login-form  -->
+ <div class="form-div" id="form-div">
+    <div class="close-div"><button id="close"><img src="src/close_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" alt=""></button></div>
+    <form action="">
+        <div class="btn-div">
+        <h1 id="head">create account</h1>
+
+        </div>
+        <label for="email">Email : </label>
+        <br>
+        <input id="email" type="email">
+        <br>
+        <label for="pass">Password : </label>
+        <br>
+        <input id="pass" type="password">
+        <br>
+        <div class="btn-div">
+        <button  id="submit">Create Account</button>
+        <button  id="login-2">Login</button>
+
+        </div>
+        <p id="login-line">already have an account? <button id="login-1" class="login">login</button> </p>
+        <p id="acc-line">If you Don't have an account? <button id="create" class="login">Create Account</button> </p>
+
+        
+    </form>
+ </div> 
+ <script type="module" src="src/form.js"></script>
+<script type="module" src="src/script.js"></script>
+<!-- <script type="module" src="src/words.js"></script> -->
+</body>
+</html>
